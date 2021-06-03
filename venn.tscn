@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Butt.png" type="Texture" id=1]
+[ext_resource path="res://delete_old_venn.gd" type="Script" id=2]
+
+[node name="VennDiagram" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Image" type="Sprite" parent="."]
+scale = Vector2( 0.565449, 0.550236 )
+texture = ExtResource( 1 )

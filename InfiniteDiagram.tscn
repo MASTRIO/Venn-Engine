@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/there is nothing here.png" type="Texture" id=1]
+[ext_resource path="res://venn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://diagram.gd" type="Script" id=3]
+
+[node name="Infinite Diagram" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 511.937, 300.812 )
+scale = Vector2( 1.28772, 1.00794 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "The background of the thing"
+}
+
+[node name="VennDiagram" parent="Background" groups=[
+"Diagrams",
+] instance=ExtResource( 2 )]
+position = Vector2( 4.42023, -11.8916 )
+scale = Vector2( 0.776566, 0.992122 )
+script = null
